@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "sapphire-pink-block",
+	"version": "${version}",
+	"name": "Sapphire Pink Block",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/sapphire-pink-block/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"ru.college.practice.SapphirePinkBlock"
+		],
+		"client": [
+			"ru.college.practice.client.SapphirePinkBlockClient"
+		]
+	},
+	"mixins": [
+		"sapphire-pink-block.mixins.json",
+		{
+			"config": "sapphire-pink-block.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
